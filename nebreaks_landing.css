@@ -1,0 +1,38 @@
+/*html,body {*/
+/*
+    height:100%;
+}
+*/
+
+/* Jumbotron Styling */
+
+.main_landing {
+    background-image: url('Assets/ne_breaks_landing-image_only-adjusted2.png'); 
+    background-repeat: no-repeat; 
+    background-position: top center; 
+    background-size: cover; 
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+    height: 100vh; 
+}
+
+/* Navbar Styling */
+
+.navbar {
+    background: none;
+    background-color: white; 
+    opacity: .5; 
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
