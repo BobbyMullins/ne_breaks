@@ -1,10 +1,4 @@
-/*html,body {*/
-/*
-    height:100%;
-}
-*/
-
-/* Jumbotron Styling */
+/* Main Content Styling */
 
 .main_landing {
     background-image: url('Assets/ne_breaks_landing-image_only-adjusted2.png'); 
@@ -22,17 +16,109 @@
 .navbar {
     background: none;
     background-color: white; 
+    border-radius: 0;
     opacity: .5; 
 }
 
-.navbar-nav {
+.navbar-nav { 
+    display: block;
     float:none;
     margin:0 auto;
-    display: block;
+    min-height: 75px; 
     text-align: center;
+    
 }
 
 .navbar-nav > li {
     display: inline-block;
     float:none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    border-bottom: 2px solid RGBA(0,0,0,0);
+    color: #18222c; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    border-bottom: 2px solid #18222c;
+}
+
+.navbar-default .navbar-nav>li>a {
+    padding-bottom: 2rem;
+    padding-left: 3rem; 
+    padding-right: 3rem; 
+}
+
+/* Navbar Hamburger */
+
+.navbar-header{
+    text-align:center;
+}
+
+.navbar-toggle {
+    float: none;
+    margin-right:0;
+}
+
+
+/*==========  Bootstrap Media Queries  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+    .navbar-default .navbar-toggle {
+        border-color: #18222c;
+    }
+    
+    .navbar-nav > li {
+        display: block;
+    }
+    
+    .navbar-default .navbar-nav>li>a:hover {
+        border-bottom: 2px solid RGBA(0,0,0,0); 
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    
+    .navbar-default .navbar-toggle {
+        border-color: #18222c;
+    }
+    
+    .navbar-nav > li {
+        display: block;
+    }
+    
+    .navbar-default .navbar-nav>li>a:hover {
+       border-bottom: 2px solid RGBA(0,0,0,0);
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+    .navbar-default .navbar-toggle {
+        border-color: #18222c;
+    }
+    
+    .navbar-nav > li {
+        display: block;
+    }
+    
+    .navbar-default .navbar-nav>li>a:hover {
+        border-bottom: 2px solid RGBA(0,0,0,0);
+    }
 }
